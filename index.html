@@ -11,7 +11,7 @@
         />
         <title>Frontend Mentor | Sunnyside agency landing page</title>
         <link
-            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;800&display=swap"
             rel="stylesheet"
         />
         <link
@@ -22,26 +22,22 @@
     </head>
     <body>
         <div class="container">
-            <!--============================================ HEADER ============================================-->
+            <!--============================== HEADER ==============================-->
             <header class="header">
                 <div class="header__top">
                     <div class="logo">
                         <img src="./images/logo.svg" alt="Sunnyside" />
                     </div>
-
                     <button class="hamburger" aria-label="Hambuger">
                         <img src="./images/icon-hamburger.svg" alt="" />
                     </button>
-
-                    <nav class="nav nav--txt-white">
+                    <nav class="nav">
                         <ul class="nav__links">
                             <li><a class="nav__link" href="#">about</a></li>
                             <li><a class="nav__link" href="#">services</a></li>
                             <li><a class="nav__link" href="#">projects</a></li>
                             <li>
-                                <a class="btn btn--white btn--rounded" href="#">
-                                    contact
-                                </a>
+                                <a class="btn btn--contact" href="#">contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -55,82 +51,84 @@
                 </div>
             </header>
 
-            <!--============================================ MAIN ============================================-->
+            <!--============================== MAIN ==============================-->
             <main class="main">
-                <!-- ************* TRANSFORM SECTION ************* -->
-                <section class="transform">
-                    <div class="transform__text">
-                        <h2 class="transform__title">Transform your brand</h2>
-                        <p class="transform__description">
-                            We are a full-service creative agency specializing
-                            in helping brands grow fast. Engage your clients
-                            through compelling visuals that do most of the
-                            marketing for you.
-                        </p>
-                        <a href="#" class="btn-text btn-text--yellow">
-                            learn more
-                        </a>
+                <section class="intro">
+                    <div class="intro__card">
+                        <div class="intro__img">
+                            <picture>
+                                <source
+                                    media="(min-width:600px)"
+                                    srcset="
+                                        ./images/desktop/image-transform.jpg
+                                    "
+                                />
+                                <img
+                                    src="./images/mobile/image-transform.jpg"
+                                    alt
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                        </div>
+                        <div class="intro__text">
+                            <h2 class="intro__title">Transform your brand</h2>
+                            <p class="intro__description">
+                                We are a full-service creative agency
+                                specializing in helping brands grow fast. Engage
+                                your clients through compelling visuals that do
+                                most of the marketing for you.
+                            </p>
+                            <a href="#" class="btn-text btn-text--yellow">
+                                learn more
+                            </a>
+                        </div>
                     </div>
-
-                    <div class="transform__img">
-                        <picture>
-                            <source
-                                media="(min-width:650px)"
-                                srcset="./images/desktop/image-transform.jpg"
-                            />
-                            <img
-                                src="./images/mobile/image-transform.jpg"
-                                alt=""
-                            />
-                        </picture>
+                    <div class="intro__card">
+                        <div class="intro__img">
+                            <picture>
+                                <source
+                                    media="(min-width:600px)"
+                                    srcset="
+                                        ./images/desktop/image-stand-out.jpg
+                                    "
+                                />
+                                <img
+                                    src="./images/mobile/image-stand-out.jpg"
+                                    alt
+                                    aria-hidden="true"
+                                />
+                            </picture>
+                        </div>
+                        <div class="intro__text">
+                            <h2 class="intro__title">
+                                Stand out to the right audience
+                            </h2>
+                            <p class="intro__description">
+                                Using a collaborative formula of designers,
+                                researchers, photographers, videographers, and
+                                copywriters, we’ll build and extend your brand
+                                in digital places.
+                            </p>
+                            <a href="#" class="btn-text btn-text--pink">
+                                learn more
+                            </a>
+                        </div>
                     </div>
                 </section>
 
-                <!-- ************* STAND OUT SECTION ************* -->
-                <section class="stand-out">
-                    <div class="stand-out__text">
-                        <h2 class="stand-out__title">
-                            Stand out to the right audience
-                        </h2>
-                        <p class="stand-out__description">
-                            Using a collaborative formula of designers,
-                            researchers, photographers, videographers, and
-                            copywriters, we’ll build and extend your brand in
-                            digital places.
-                        </p>
-                        <a href="#" class="btn-text btn-text--pink">
-                            learn more
-                        </a>
-                    </div>
-
-                    <div class="stand-out__img">
-                        <picture>
-                            <source
-                                media="(min-width:650px)"
-                                srcset="./images/desktop/image-stand-out.jpg"
-                            />
-                            <img
-                                src="./images/mobile/image-stand-out.jpg"
-                                alt=""
-                            />
-                        </picture>
-                    </div>
-                </section>
-
-                <!-- ************* OFFERS SECTION ************* -->
-                <section class="offers">
-                    <div class="offers__graphic">
-                        <h3 class="offers__graphic-title">Graphic design</h3>
-                        <p class="offers__graphic-para">
+                <section class="service">
+                    <div class="service__card service__card--graphic">
+                        <h2 class="service__title">Graphic design</h2>
+                        <p class="service__description">
                             Great design makes you memorable. We deliver artwork
                             that underscores your brand message and captures
                             potential clients’ attention.
                         </p>
                     </div>
 
-                    <div class="offers__photography">
-                        <h3 class="offers__photography-title">Photography</h3>
-                        <p class="offers__photography-para">
+                    <div class="service__card service__card--photography">
+                        <h2 class="service__title">Photography</h2>
+                        <p class="service__description">
                             Increase your credibility by getting the most
                             stunning, high-quality photos that improve your
                             business image.
@@ -138,8 +136,7 @@
                     </div>
                 </section>
 
-                <!-- ************* CLIENT TESTIMONIALS SECTION ************* -->
-                <section class="client-testimonials">
+                <section class="testimonials">
                     <h2>client testimonials</h2>
                     <ul class="reviews-list">
                         <li class="review">
@@ -153,9 +150,12 @@
                                 delivered, making sure our needs were met and
                                 deadlines were always hit.
                             </p>
-
-                            <span class="review__name">Emily R.</span>
-                            <span class="review__job">Marketing Director</span>
+                            <div class="review__info">
+                                <span class="review__name">Emily R.</span>
+                                <span class="review__job"
+                                    >Marketing Director
+                                </span>
+                            </div>
                         </li>
 
                         <li class="review">
@@ -169,11 +169,12 @@
                                 interest in our brand’s success made it a
                                 satisfying and enjoyable experience.
                             </p>
-
-                            <span class="review__name">Thomas S.</span>
-                            <span class="review__job">
-                                Chief Operating Officer
-                            </span>
+                            <div class="review__info">
+                                <span class="review__name">Thomas S.</span>
+                                <span class="review__job">
+                                    Chief Operating Officer
+                                </span>
+                            </div>
                         </li>
 
                         <li class="review">
@@ -187,18 +188,18 @@
                                 400% when we worked with Sunnyside. Highly
                                 recommended!
                             </p>
-
-                            <span class="review__name">Jennie F.</span>
-                            <span class="review__job">Business Owner</span>
+                            <div class="review__info">
+                                <span class="review__name">Jennie F.</span>
+                                <span class="review__job">Business Owner</span>
+                            </div>
                         </li>
                     </ul>
                 </section>
 
-                <!-- ************* IMAGES GALLERY SECTION ************* -->
-                <section class="imgs-gallery">
+                <section class="gallery">
                     <picture>
                         <source
-                            media="(min-width:650px)"
+                            media="(min-width:600px)"
                             srcset="
                                 ./images/desktop/image-gallery-milkbottles.jpg
                             "
@@ -211,7 +212,7 @@
 
                     <picture>
                         <source
-                            media="(min-width:650px)"
+                            media="(min-width:600px)"
                             srcset="./images/desktop/image-gallery-orange.jpg"
                         />
                         <img
@@ -222,7 +223,7 @@
 
                     <picture>
                         <source
-                            media="(min-width:650px)"
+                            media="(min-width:600px)"
                             srcset="./images/desktop/image-gallery-cone.jpg"
                         />
                         <img
@@ -233,7 +234,7 @@
 
                     <picture>
                         <source
-                            media="(min-width:650px)"
+                            media="(min-width:600px)"
                             srcset="
                                 ./images/desktop/image-gallery-sugar-cubes.jpg
                             "
@@ -246,35 +247,40 @@
                 </section>
             </main>
 
-            <!--============================================ FOOTER ============================================-->
+            <!--============================== FOOTER ==============================-->
             <footer class="footer">
-                <div class="logo logo--dark-green">sunnyside</div>
-                <nav class="nav nav--txt-dark-green">
-                    <ul class="nav__links">
-                        <li><a class="nav__link" href="#">about</a></li>
-                        <li><a class="nav__link" href="#">services</a></li>
-                        <li><a class="nav__link" href="#">projects</a></li>
-                    </ul>
-                </nav>
-
+                <div class="footer__logo">sunnyside</div>
+                <ul class="footer__links">
+                    <li><a class="footer__link" href="#">about</a></li>
+                    <li><a class="footer__link" href="#">services</a></li>
+                    <li><a class="footer__link" href="#">projects</a></li>
+                </ul>
                 <div class="social-links">
                     <a href="#">
-                        <img src="./images/icon-facebook.svg" alt="" />
+                        <img src="./images/icon-facebook.svg" alt="facebook" />
                     </a>
 
                     <a href="#">
-                        <img src="./images/icon-instagram.svg" alt="" />
+                        <img
+                            src="./images/icon-instagram.svg"
+                            alt="instagram"
+                        />
                     </a>
 
                     <a href="#">
-                        <img src="./images/icon-twitter.svg" alt="" />
+                        <img src="./images/icon-twitter.svg" alt="twitter" />
                     </a>
 
                     <a href="#">
-                        <img src="./images/icon-pinterest.svg" alt="" />
+                        <img
+                            src="./images/icon-pinterest.svg"
+                            alt="pinterest"
+                        />
                     </a>
                 </div>
             </footer>
         </div>
+
+        <script src="./script.js"></script>
     </body>
 </html>
