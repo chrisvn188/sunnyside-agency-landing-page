@@ -475,10 +475,14 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 1em;
     }
     .review {
         max-width: 400px;
+    }
+}
+@media (min-width: 1200px) {
+    .reviews-list {
+        gap: 1em;
     }
 }
 
