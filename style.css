@@ -361,6 +361,7 @@ p {
     margin: 1.5em 0;
     font-weight: 500;
     color: var(--clr-dark-grayish-blue);
+    max-width: 490px;
 }
 
 /* SERVICE SECTION */
